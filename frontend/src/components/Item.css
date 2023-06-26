@@ -1,0 +1,48 @@
+.bookName{
+    font-family: 'Cormorant SC', serif;
+    font-weight: 700 !important;
+}
+
+.bookName,.authorName{
+    color: black;
+}
+
+.bookName{
+    line-height: 1.5rem;
+}
+
+.LinkBody{
+    margin: 2%; 
+}
+
+.book {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 0.5%;
+    width: 100%;
+    /* height: ; */
+    margin: 1%;
+    float: left;
+}
+
+.book img {
+    border-radius:3%;
+    height: 70%;
+    width: 100%;
+}
+
+.bookName{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.card{
+    height: 23rem;
+    box-shadow: 2px 2px 20px #410374;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 2%;
+}

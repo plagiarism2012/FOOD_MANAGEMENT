@@ -1,0 +1,116 @@
+ Form.css
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    padding: 120px 0;
+    background-color: #3c3c3c;
+    color: #fff;
+}
+
+.postForm {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6%;
+    margin-bottom: 40px;
+    margin-top: -80px;
+    z-index: 1;
+}
+
+.postForm .form-wrapper {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.postForm .form-wrapper h2 {
+    margin-bottom: 20px;
+    color: #2a2d34;
+    font-size: 24px;
+    text-align: center;
+}
+
+.postForm .form-group {
+    margin-bottom: 20px;
+}
+
+.postForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+.postForm input[type='file'],
+.postForm input[type='text'],
+.postForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.postForm button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4a154b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.postForm button:hover {
+    background-color: #5c1b5e;
+}
+
+.postForm .icon-upload,
+.postForm .icon-food,
+.postForm .icon-quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.postForm .icon-upload img,
+.postForm .icon-food img,
+.postForm .icon-quantity img {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.postForm .image-container img {
+    max-height: 400px;
+    width: 100%;
+}
+
+.postForm .footer {
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #555;
+} 
+
+#Alert{
+    visibility:hidden;
+}
+
+#countAlert{
+    visibility:hidden;
+}
