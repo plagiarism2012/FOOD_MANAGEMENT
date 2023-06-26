@@ -37,9 +37,15 @@ function Login() {
         if (response.status === 200)
         {
           setFlag(2);
+          console.log(response.data);
           localStorage.setItem('id',response.data.id);
           localStorage.setItem('accessToken',response.data.accessToken);
           localStorage.setItem('signature',response.data.signature);
+          var check = false;
+          response.data.roles.forEach(element => {
+            if(element === "ROLE_ADMIN") check = true;
+          });
+          if(check) localStorage.setItem('role','admin');
           setTimeout(() => {
             nav('/');
           }, 1500);    

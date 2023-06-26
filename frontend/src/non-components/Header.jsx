@@ -13,6 +13,7 @@ function Header() {
         localStorage.setItem('id', "");
         localStorage.setItem('accessToken', "");
         localStorage.setItem('signature', "");
+        localStorage.setItem('role', "");
         document.getElementById("logoutAlert").style.display = 'block';
 
         setTimeout(() => {
@@ -22,12 +23,12 @@ function Header() {
     }
 
     function handleSell() {
-        if (!localStorage.getItem('signature')) {
+        if (!localStorage.getItem('role')) {
             document.getElementById("loginAlert").style.display = 'block';
             setTimeout(() => {
                 document.getElementById("loginAlert").style.display = 'none';
                 nav('/login');
-            }, 1500);
+            }, 1000);
         } else {
             nav('/postForm');
         }
@@ -43,7 +44,7 @@ function Header() {
                         </a>
 
                         <div>
-                            {localStorage.getItem('signature') && <button onClick={handleSell} type="button" class="btn btn-secondary">Post Form</button>}
+                            {localStorage.getItem('role')==="admin" && <button onClick={handleSell} type="button" class="btn btn-secondary">Post Form</button>}
                             {!localStorage.getItem('signature') && <button onClick={handleLogin} type="button" class="btn btn-secondary">Login</button>}
                             {localStorage.getItem('signature') && <button onClick={handleLogout} type="button" class="btn btn-secondary">Logout</button>}
                             {localStorage.getItem('signature') && <button type="button" class="btn btn-secondary"><i class="fa-solid fa-user"></i></button>}
